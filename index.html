@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Address Book</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <form class="addressBlock">
+    <fieldset>
+      <h2>My Contacts</h2>
+      <p class="formList">
+        <label for="name">Name</label>
+        <input id="name" name="name" />
+        <label for="email">Email</label>
+        <input id="email" name="email" />
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" />
+
+        <label for="relation">Relation</label>
+        <select id="relation" name="relation">
+          <option value="Parent">Parent</option>
+          <option value="Sibling">Sibling</option>
+          <option value="Grandparent">Grandparent</option>
+          <option value="Aunt">Aunt</option>
+          <option value="Uncle">Uncle</option>
+          <option value="Cousin">Cousin</option>
+          <option value="N/A">N/A</option>
+        </select>
+        <button type="submit">Add</button>
+      </p>
+    </fieldset>
+  </form>
+
+  <section id="showContacts"></section>
+  <script src="script.js"></script>
+</body>
+
+</html>
