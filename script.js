@@ -25,11 +25,11 @@ function print(info) {
 
 let book = new AddressBook();
 
-// book.add('Kenney', 'kenney@gmail.com', 5865555555, 'myself');
-// book.add('Kyle', 'kyle@gmail.com', 5864444444, 'brother');
-// book.add('Jarl', 'Jarlbalgruuf@skyrim.com', 4444444444, 'Jarl of Whiterun');
-// book.deleteAt(1);
-// print(book);
+book.add('Kenney', 'kenney@gmail.com', 5865555555, 'myself');
+book.add('Kyle', 'kyle@gmail.com', 5864444444, 'brother');
+book.add('Jarl', 'Jarlbalgruuf@skyrim.com', 4444444444, 'Jarl of Whiterun');
+book.deleteAt(1);
+print(book);
 
 function display() {
   document.querySelector('#showContacts').innerHTML = '';
